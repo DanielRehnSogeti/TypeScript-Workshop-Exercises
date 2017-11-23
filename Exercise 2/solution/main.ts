@@ -7,7 +7,7 @@ interface IShape {
 }
 
 class Circle implements IShape {
-    constructor(public radius : number, public color : string) {}
+    constructor(private radius : number, public color : string) {}
 
     public area() : number {
         return this.radius * this.radius * Math.PI;
@@ -19,7 +19,7 @@ class Circle implements IShape {
 }
 
 class Rectangle implements IShape {
-    constructor(public width : number, public height : number, public color : string) {}
+    constructor(private width : number, private height : number, public color : string) {}
 
     public area() : number {
         return this.width * this.height;

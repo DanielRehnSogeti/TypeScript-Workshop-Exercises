@@ -10,7 +10,7 @@ Display a greeting message.
 * Alert or log the result of the function.
 
 ## Exercise 2 - Shape up!
-Create an interface called that defines the properties of a shape.
+Create an interface that defines the properties of a shape.
 * color - string
 * area - function that calculates the area of the shape
 * toString - function that returns the name of the shape as well as its color and area
