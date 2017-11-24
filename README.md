@@ -12,8 +12,8 @@ Display a greeting message.
 ## Exercise 2 - Shape up!
 Create an interface that defines the properties of a shape.
 * color - string
-* area - function that calculates the area of the shape
-* toString - function that returns the name of the shape as well as its color and area
+* area - method that calculates and returns the area of the shape
+* toString - method that returns the name of the shape as well as its color and area
 
 Create at least two classes that implements the interface and has the listed private properties.
 * Circle
@@ -24,7 +24,10 @@ Create at least two classes that implements the interface and has the listed pri
 
 Create an instance of each shape and alert or log the result of each objects toString() method.
 
-Example output for circle class: `Circle - 3.14159 - green`
+Example output for the circle class: 
+```
+Circle - 3.14159 - green
+```
 
 ## Exercise 3 - Dictionary
 Implement a dictionary class using generics that uses one type for the key and another for the value.
@@ -37,15 +40,20 @@ Add the following methods
 * Get - Get the value of a key-value pair
 * toString - Returns the contents of the dictionary as a string where all key-value pairs are separated by a new line.
 
-Add some data to the dictionary and the alert or log the result of the toString method.
+Create a new instance of the dictionary and add some data to it. Alert or log the result of the toString method.
 
 Example usage:
 ```
 let d = new Dictionary<string, number>();
 d.Add('foo', 3);
+let a = d.Get('foo');
 ```
 
-### Bonus
+### Bonus 1
+
+Throw an exception when the dictionary is used incorrectly. For instance when getting the value of a key that does not exist or when trying to add a key that already does.
+
+### Bonus 2
 
 Add a ForEach method that iterates over every key-value pair in the dictionary and triggers a callback function. The callback function takes one parameter that is the key-value pair.
 
@@ -57,5 +65,5 @@ myDictionary.ForEach((kvp) => {
 });
 ```
 
-### Bonus 2
+### Bonus 3
 Modify the ForEach method so that if false is returned in the callback method, the loop breaks.

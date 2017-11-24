@@ -17,8 +17,8 @@ class Dictionary<K, V> {
             throw new Error(`Key '${key}' not present in dictionary!`);
         
         let index = this._keys.indexOf(key);
-        this._keys.slice(index, 1);
-        this._values.slice(index, 1);
+        this._keys.splice(index, 1);
+        this._values.splice(index, 1);
     }
     
     public ContainsKey(key : K) : boolean {
